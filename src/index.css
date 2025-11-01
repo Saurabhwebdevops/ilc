@@ -1,8 +1,6 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
+/*
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -71,14 +69,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-@media only screen and (max-width :749px){
-  .form-container{
+ .form-container{
     display: flex
 ;
     align-items: center;
     justify-content: center;
-    background: #ededed;
-    width: 95%;
+    background: #f7ca9b;
+    width: 400px;
     flex-direction: column;
     margin: 25px auto;
   }
@@ -88,6 +85,8 @@ button:focus-visible {
     border: 2px solid #fff;
     padding: 4px 13px;
     background: #fff;
+    text-align: center;
+    width: 100%;
   }
   form{
     display: flex;
@@ -102,7 +101,61 @@ button:focus-visible {
     color: rgb(0,0,0,0.7);
   }
   input:focus-visible{
-    border: 0.625px solid #b7b4b4;
+    border: 0.625px solid #3d3d3d;
+        box-shadow: 0 0 0.9px 0px #000;
+        outline: none;
+  }
+  label{
+    margin: 5px 0;
+    color: #313131;
+  }
+  button{
+    background: #000;
+    color: #fff;
+    margin: 15px 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+@media only screen and (max-width :749px){
+  .form-container{
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    background: #f7ca9b;
+    width: 95%;
+    flex-direction: column;
+    margin: 25px auto;
+  }
+  .form-container h3{
+    font-weight: 400;
+    word-spacing: 3px;
+    border: 2px solid #fff;
+    padding: 4px 13px;
+    background: #fff;
+    text-align: center;
+    width: 100%;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  input{
+    margin: 5px 0;
+    padding: 7px;
+    border: 0.625px solid #ededed;
+    border-radius: 4px;
+    color: rgb(0,0,0,0.7);
+  }
+  input:focus-visible{
+    border: 0.625px solid #3d3d3d;
         box-shadow: 0 0 0.9px 0px #000;
         outline: none;
   }
